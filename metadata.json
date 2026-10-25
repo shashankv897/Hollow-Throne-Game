@@ -1,0 +1,6 @@
+{
+  "name": "Hollow Throne",
+  "description": "A dark roguelike strategy card game. Seize the crown. Survive the court.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

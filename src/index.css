@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'EB Garamond', Georgia, serif;
+    background-color: #0b0c10;
+    color: #ded1b8;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-cinzel {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.04em;
+  }
+
+  .font-manuscript {
+    font-family: 'Cinzel Decorative', 'MedievalSharp', serif;
+  }
+}
+
+/* Custom dark parchment and illuminated manuscript aesthetics */
+.parchment-panel {
+  background: radial-gradient(circle at 50% 20%, #1c1815 0%, #12100e 70%, #0a0908 100%);
+  border: 1px solid rgba(197, 160, 89, 0.28);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), inset 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+.gold-border {
+  border-color: #c5a059;
+}
+
+.text-gold {
+  color: #d8b26e;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f5e4b8 0%, #d8b26e 50%, #947133 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blood-gradient-text {
+  background: linear-gradient(135deg, #f87171 0%, #b91c1c 60%, #7f1d1d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0c0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a3227;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5c4e3a;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 0.95; filter: drop-shadow(0 0 15px rgba(245, 158, 11, 0.3)); }
+  50% { opacity: 0.85; filter: drop-shadow(0 0 10px rgba(245, 158, 11, 0.2)); }
+  75% { opacity: 0.98; filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.4)); }
+}
+
+.candle-glow {
+  animation: flicker 4s infinite ease-in-out;
+}
